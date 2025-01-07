@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="center" class="centre_o bg_back" style="background-image: url({{ url_for('static', filename='imgs/packages_hero.jpg') }}); background-repeat: no-repeat; background-position: bottom center; background-size: cover;">
+  <div class="container-xl">
+   <div class="row centre_o1 text-center">
+    <div class="col-md-12">
+      <h1 class="text-white text-uppercase font_60">LOGIN</h1>
+      <h6 class="mb-0 text-white fw-bold"><a class="text-white" href="#">HOME</a> <span class="mx-1 text-white-50">|</span> LOGIN</h6>
+    </div>
+   </div>
+  </div>
+ </section>
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card" style="width: 100%; max-width: 400px;">
+        <div class="card-header text-center">
+            <h3>Login</h3>
+        </div>
+        <div class="card-body">
+            <form action="{{ url_for('login') }}" method="POST">
+                <!-- Flash messages -->
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        <div class="alert alert-danger">
+                            {% for category, message in messages %}
+                                <strong>{{ message }}</strong>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+
+                <!-- Username input -->
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+
+                <!-- Password input -->
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+            <div class="text-center mt-3">
+                <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

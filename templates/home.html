@@ -1,0 +1,839 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="main_2 clearfix">
+   <section id="center" class="center_home">
+ <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{ url_for('static', filename='imgs/travel_hero_1.jpg') }}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+          <h1 class="font_60 text-uppercase"><span class="logo_col">Beautiful</span> Place <br> to Visit</h1>
+		  <p class="text-white mt-3">Discover stunning destinations that will take your breath away.</p>
+		  <ul class="mb-0 mt-4">
+		  <li class="d-inline-block"><a class="button text-uppercase" href="#">Learn More </a></li>
+		   <li class="d-inline-block ms-2"><a class="button_1  text-uppercase" href="#">Book Now </a></li>
+		</ul>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='imgs/travel_hero_2.jpg') }}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+            <h1 class="font_60 text-uppercase">Journey to <br> <span class="logo_col">explore</span> world</h1>
+		  <p class="text-white mt-3">Embark on journeys that create lasting memories.</p>
+		  <ul class="mb-0 mt-4">
+		  <li class="d-inline-block"><a class="button text-uppercase" href="#">Learn More </a></li>
+		   <li class="d-inline-block ms-2"><a class="button_1  text-uppercase" href="#">Book Now </a></li>
+		</ul>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='imgs/travel_hero_3.jpg') }}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+            <h1 class="font_60 text-uppercase"><span class="logo_col">Your Dream </span> <br> Getaway Awaits</h1>
+		  <p class="text-white mt-3">Find the perfect escape, tailored just for you.</p>
+		  <ul class="mb-0 mt-4">
+		  <li class="d-inline-block"><a class="button text-uppercase" href="#">Learn More </a></li>
+		   <li class="d-inline-block ms-2"><a class="button_1  text-uppercase" href="#">Book Now </a></li>
+		</ul>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+ </div>
+ 
+</div>
+
+<section id="book" class="pt-5 pb-5 bg_red">
+    <div class="container-xl">
+	 <div class="row book_1">
+	   <div class="col-md-9">
+	    <div class="book_1l">
+		 <div class="book_1li row">
+		  <div class="col-md-3 col-sm-6">
+		    <div class="book_1li1">
+			 <h6 class="text-white mb-3">Search Destination*</h6>
+			 <input placeholder="Enter Destination" class="form-control rounded_30 border-0 font_14" type="text">
+			</div>
+		  </div>
+		  <div class="col-md-3 col-sm-6">
+		    <div class="book_1li1">
+			 <h6 class="text-white mb-3">Pax Number*</h6>
+			 <input placeholder="No. of People" class="form-control rounded_30 border-0 font_14" type="text">
+			</div>
+		  </div>
+		  <div class="col-md-3 col-sm-6">
+		    <div class="book_1li1">
+			 <h6 class="text-white mb-3">Checkin Date*</h6>
+			 <input class="form-control  rounded_30 border-0 font_14" id="example-date" type="date" name="date">
+			</div>
+		  </div>
+		  <div class="col-md-3 col-sm-6">
+		    <div class="book_1li1">
+			 <h6 class="text-white mb-3">Checkout Date*</h6>
+			 <input class="form-control  rounded_30 border-0 font_14" id="example-date" type="date" name="date">
+			</div>
+		  </div>
+		 </div>
+		</div>
+	   </div>
+	   <div class="col-md-3">
+	    <div class="book_1r">
+		 <h6 class="mb-0"><a class="button_blue text-uppercase d-block text-center fw-bold" href="#">Inquire Now</a></h6>
+		</div>
+	   </div>
+	 </div>
+	</div>
+   </section>
+   
+<section id="popular" class="p_3">
+    <div class="container-xl">
+	 <div class="row popular_1 text-center mb-4">
+	    <div class="col-md-12">
+		 <h6 class="col_blue">UNCOVER PLACE</h6>
+		 <h1>POPULAR <span class="col_red">DESTINATION</span></h1>
+		 <p class="mb-0">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum  <br> cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+		</div>
+	 </div>
+	 <div class="row popular_2  mb-4">
+	    <div class="col-md-4">
+		 <div class="popular_2m position-relative">
+		  <div class="popular_2m1">
+		   <img src="img/4.jpg" class="w-100 rounded_10" alt="abc">
+		  </div>
+		  <div class="popular_2m2 rounded_10 bg-white p-4 position-absolute">
+		   <h6 class="col_blue font_14">ITALY</h6>
+		   <h4 class="text-uppercase"><a href="#">Lorem Porta</a></h4>
+		   <p class="mb-0">Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
+		  </div>
+		  <div class="popular_2m3 top-0 position-absolute w-100 text-end">
+		   <span class="bg_red rounded_30 d-inline-block text-white p-1 px-2 font_14">
+		    <i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+		   </span>
+		  </div>
+		 </div>
+		</div>
+		<div class="col-md-4">
+		 <div class="popular_2m position-relative">
+		  <div class="popular_2m1">
+		   <img src="img/5.jpg" class="w-100 rounded_10" alt="abc">
+		  </div>
+		  <div class="popular_2m2 rounded_10 bg-white p-4 position-absolute">
+		   <h6 class="col_blue font_14">DUBAI</h6>
+		   <h4 class="text-uppercase"><a href="#">Dolor Amet</a></h4>
+		   <p class="mb-0">Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
+		  </div>
+		  <div class="popular_2m3 top-0 position-absolute w-100 text-end">
+		   <span class="bg_red rounded_30 d-inline-block text-white p-1 px-2 font_14">
+		    <i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+		   </span>
+		  </div>
+		 </div>
+		</div>
+		<div class="col-md-4">
+		 <div class="popular_2m position-relative">
+		  <div class="popular_2m1">
+		   <img src="img/6.jpg" class="w-100 rounded_10" alt="abc">
+		  </div>
+		  <div class="popular_2m2 rounded_10 bg-white p-4 position-absolute">
+		   <h6 class="col_blue font_14">JAPAN</h6>
+		   <h4 class="text-uppercase"><a href="#">Eget Quis</a></h4>
+		   <p class="mb-0">Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
+		  </div>
+		  <div class="popular_2m3 top-0 position-absolute w-100 text-end">
+		   <span class="bg_red rounded_30 d-inline-block text-white p-1 px-2 font_14">
+		    <i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+		   </span>
+		  </div>
+		 </div>
+		</div>
+	 </div>
+	 <div class="row popular_1 text-center">
+	    <div class="col-md-12">
+		 <h6 class="mb-0"><a class="button" href="#">MORE DESTINATION</a></h6>
+		</div>
+	 </div>
+	</div>
+   </section>
+   
+<section id="pack" class="p_3 bg-light">
+    <div class="container-xl">
+	 <div class="row popular_1 text-center mb-4">
+	    <div class="col-md-12">
+		 <h6 class="col_blue">POPULAR PACKAGES</h6>
+		 <h1>CHECKOUT OUR <span class="col_red">PACKAGES</span></h1>
+		 <p class="mb-0">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum  <br> cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+		</div>
+	 </div>
+	 <div class="row pack_1 bg-white border_radius_left mb-5">
+	    <div class="col-md-4 p-0">
+	     <div class="pack_1l">
+		   <img src="img/7.jpg" class="w-100" alt="abc">
+		 </div>
+		</div>
+		<div class="col-md-5 p-0">
+	     <div class="pack_1m">
+		  <h4><a href="#">EXPERIENCE THE GREAT <br> HOLIDAY ON BEACH</a></h4>
+		  <p class="mt-3">Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque, cras, aspernatur.</p>
+		  <h6 class="mb-0 bg-light d-inline-block p-2 px-4 rounded_30 font_14"> <i class="fa fa-clock-o col_blue me-1"></i> 7D/6N <span class="mx-2 text-muted">|</span>  <i class="fa fa-clock-o col_blue me-1"></i> Pax: 12 <span class="mx-2 text-muted">|</span>  <i class="fa fa-map-marker col_blue me-1"></i> London</h6>
+		 </div>
+		</div>
+		<div class="col-md-3 p-0 bg_red border_radius_right">
+	     <div class="pack_1r text-center">
+		  <h6 class="text-white font_14">(22 reviews)
+		   <span>
+		    <i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-o"></i>
+		   </span>
+		  </h6>
+		  <h1 class="text-white mt-3 mb-1">$710</h1>
+		  <h6 class="font_12 text-white">/ per person</h6>
+		  <h6 class="mb-0 mt-4"><a class="button_1" href="#">BOOK NOW</a></h6>
+		 </div>
+		</div>
+	 </div>
+	 <div class="row pack_1 bg-white border_radius_left mb-5">
+	    <div class="col-md-4 p-0">
+	     <div class="pack_1l">
+		   <img src="img/8.jpg" class="w-100" alt="abc">
+		 </div>
+		</div>
+		<div class="col-md-5 p-0">
+	     <div class="pack_1m">
+		  <h4><a href="#">SUMMER HOLIDAY TO THE <br> OXOLOTAN RIVER</a></h4>
+		  <p class="mt-3">Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque, cras, aspernatur.</p>
+		  <h6 class="mb-0 bg-light d-inline-block p-2 px-4 rounded_30 font_14"> <i class="fa fa-clock-o col_blue me-1"></i> 7D/6N <span class="mx-2 text-muted">|</span>  <i class="fa fa-clock-o col_blue me-1"></i> Pax: 12 <span class="mx-2 text-muted">|</span>  <i class="fa fa-map-marker col_blue me-1"></i> London</h6>
+		 </div>
+		</div>
+		<div class="col-md-3 p-0 bg_red border_radius_right">
+	     <div class="pack_1r text-center">
+		  <h6 class="text-white font_14">(22 reviews)
+		   <span>
+		    <i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-o"></i>
+		   </span>
+		  </h6>
+		  <h1 class="text-white mt-3 mb-1">$710</h1>
+		  <h6 class="font_12 text-white">/ per person</h6>
+		  <h6 class="mb-0 mt-4"><a class="button_1" href="#">BOOK NOW</a></h6>
+		 </div>
+		</div>
+	 </div>
+	 <div class="row pack_1 bg-white border_radius_left mb-5">
+	    <div class="col-md-4 p-0">
+	     <div class="pack_1l">
+		   <img src="img/9.jpg" class="w-100" alt="abc">
+		 </div>
+		</div>
+		<div class="col-md-5 p-0">
+	     <div class="pack_1m">
+		  <h4><a href="#">SANTORINI ISLAND'S WEEKEND <br> VACATION</a></h4>
+		  <p class="mt-3">Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque, cras, aspernatur.</p>
+		  <h6 class="mb-0 bg-light d-inline-block p-2 px-4 rounded_30 font_14"> <i class="fa fa-clock-o col_blue me-1"></i> 7D/6N <span class="mx-2 text-muted">|</span>  <i class="fa fa-clock-o col_blue me-1"></i> Pax: 12 <span class="mx-2 text-muted">|</span>  <i class="fa fa-map-marker col_blue me-1"></i> London</h6>
+		 </div>
+		</div>
+		<div class="col-md-3 p-0 bg_red border_radius_right">
+	     <div class="pack_1r text-center">
+		  <h6 class="text-white font_14">(22 reviews)
+		   <span>
+		    <i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-o"></i>
+		   </span>
+		  </h6>
+		  <h1 class="text-white mt-3 mb-1">$710</h1>
+		  <h6 class="font_12 text-white">/ per person</h6>
+		  <h6 class="mb-0 mt-4"><a class="button_1" href="#">BOOK NOW</a></h6>
+		 </div>
+		</div>
+	 </div>
+	 
+	 <div class="row popular_1 text-center mt-4">
+	    <div class="col-md-12">
+		 <h6 class="mb-0"><a class="button" href="#">VIEW ALL PACKAGES</a></h6>
+		</div>
+	 </div>
+	</div>
+   </section>
+   
+<div class="main_om position-relative">
+<div class="main_om1">
+  <section id="spec">
+<div class="spec_m bg_back pt-5">
+<div class="container-xl">
+  <div class="row spec_1 text-center">
+   <div class="col-md-12">
+    <span class="d-inline-block col_blue lh-1"><i class="fa fa-play-circle"></i></span>
+	<h1 class="mt-3 text-white">ARE YOU READY TO TRAVEL? <br> REMEMBER US !!</h1>
+	<p class="text-white">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum <br> cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+	<ul class="mb-0 mt-4">
+		  <li class="d-inline-block"><a class="button text-uppercase" href="#">VIEW PACKAGES </a></li>
+		   <li class="d-inline-block ms-2"><a class="button_1  text-uppercase" href="#">LEARN MORE </a></li>
+		</ul>
+   </div>
+  </div>
+</div>
+</div>
+</section>
+</div>
+   
+<div class="main_om2 position-absolute w-100">
+  <section id="spec_o">
+<div class="container-xl">
+  <div class="row spec_o_1 bg-white shadow_box rounded_30 p-5 px-3">
+   <div class="col-md-3 col-sm-6">
+    <div class="spec_o_1i">
+	 <h1>55K+</h1>
+	 <h6 class="mb-0 col_blue">SATISFIED CUSTOMER</h6>
+	</div>
+   </div>
+   <div class="col-md-3 col-sm-6">
+    <div class="spec_o_1i">
+	 <h1>22+</h1>
+	 <h6 class="mb-0 col_blue">ACTIVE MEMBERS</h6>
+	</div>
+   </div>
+   <div class="col-md-3 col-sm-6">
+    <div class="spec_o_1i">
+	 <h1>125+</h1>
+	 <h6 class="mb-0 col_blue">TOUR DESTINATION</h6>
+	</div>
+   </div>
+   <div class="col-md-3 col-sm-6">
+    <div class="spec_o_1i border-0">
+	 <h1>39+</h1>
+	 <h6 class="mb-0 col_blue">TRAVEL GUIDES</h6>
+	</div>
+   </div>
+  </div>
+</div>
+</section>
+</div>
+
+
+
+</div>
+
+<section id="disc" class="p_3">
+    <div class="container-xl">
+	 <div class="row popular_1 text-center mb-4">
+	    <div class="col-md-12">
+		 <h6 class="col_blue">OFFER & DISCOUNT</h6>
+		 <h1>OUR <span class="col_red">SPECIAL</span> PACKAGES</h1>
+		 <p class="mb-0">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum  <br> cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+		</div>
+	 </div>
+	 <div class="row disc_1">
+	    <div class="col-md-6">
+	       <div class="disc_1l position-relative">
+		     <div class="disc_1l1">
+			   <img src="img/10.jpg" class="w-100 rounded_30" alt="abc">
+			 </div>
+			 <div class="disc_1l2 position-absolute text-end top-0 w-100 p-4">
+			   <h6 class="bg_red rounded_30 d-inline-block text-white p-2 px-3 font_14">UPTO 20% off</h6>
+			 </div>
+			 <div class="disc_1l3 rounded_30 position-absolute bg_light p-4">
+			   <h6 class="font_14"> <i class="fa fa-clock-o col_blue me-1"></i> 7D/6N <span class="mx-2 text-muted">|</span>  <i class="fa fa-clock-o col_blue me-1"></i> Pax: 12 <span class="mx-2 text-muted">|</span>  <i class="fa fa-map-marker col_blue me-1"></i> London</h6>
+			   <h4 class="mt-3"><a href="#">TOUR TO SATORINI</a></h4>
+			   <p>Fusce hic augue velit wisi ips quibus dam pariatur, iusto.</p>
+			   <h5 class="col_blue">price: <span class="text-decoration-line-through text-muted">$1400</span> $1205</h5>
+			    <h6 class="mb-0 mt-3"><a class="button" href="#">BOOK NOW</a></h6>
+			 </div>
+		   </div>
+		</div>
+		<div class="col-md-6">
+	       <div class="disc_1l position-relative">
+		     <div class="disc_1l1">
+			   <img src="img/11.jpg" class="w-100 rounded_30" alt="abc">
+			 </div>
+			 <div class="disc_1l2 position-absolute text-end top-0 w-100 p-4">
+			   <h6 class="bg_red rounded_30 d-inline-block text-white p-2 px-3 font_14">UPTO 25% off</h6>
+			 </div>
+			 <div class="disc_1l3 rounded_30 position-absolute bg_light p-4">
+			   <h6 class="font_14"> <i class="fa fa-clock-o col_blue me-1"></i> 7D/6N <span class="mx-2 text-muted">|</span>  <i class="fa fa-clock-o col_blue me-1"></i> Pax: 12 <span class="mx-2 text-muted">|</span>  <i class="fa fa-map-marker col_blue me-1"></i> London</h6>
+			   <h4 class="mt-3"><a href="#">WEEKEND TO PARIS</a></h4>
+			   <p>Fusce hic augue velit wisi ips quibus dam pariatur, iusto.</p>
+			   <h5 class="col_blue">price: <span class="text-decoration-line-through text-muted">$1200</span> $1000</h5>
+			    <h6 class="mb-0 mt-3"><a class="button" href="#">BOOK NOW</a></h6>
+			 </div>
+		   </div>
+		</div>
+	 </div>
+	 <div class="row popular_1 text-center mt-4">
+	    <div class="col-md-12">
+		 <h6 class="mb-0"><a class="button" href="#">VIEW ALL PACKAGES</a></h6>
+		</div>
+	 </div>
+	</div>
+   </section>
+   
+<section id="gallery" class="p_3 bg-light">
+    <div class="container-xl">
+	 <div class="row popular_1 text-center mb-4">
+	    <div class="col-md-12">
+		 <h6 class="col_blue">PHOTO GALLERY</h6>
+		 <h1>PHOTO'S FROM <span class="col_red">TRAVELLERS</span></h1>
+		 <p class="mb-0">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum  <br> cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+		</div>
+	 </div>
+	 <div class="homei row">
+	     <div class="col-md-4">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/12.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Travels</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/12.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/13.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal1" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal1" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Travels</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/13.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/14.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal6" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal6" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Travels</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/14.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+	   </div>	
+	 <div class="homei row mt-4">
+	     <div class="col-md-4">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/15.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal3" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal3" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Travels</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/15.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/16.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal4" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal4" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Travels</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/16.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/17.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal5" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal5" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Travels</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/17.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+	   </div>
+	</div>
+   </section>
+   
+<section id="spec_n">
+<div class="spec_nm bg_back">
+<div class="container-xl">
+  <div class="row spec_1 text-center">
+   <div class="col-md-12">
+    <h6 class="text-white">DISCOUNT OFFER</h6>
+	<h1 class="mt-3 text-white">GET SPECIAL DISCOUNT <br> ON SIGN UP !</h1>
+	<p class="text-white mt-3">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum <br> cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+	<h6 class="mb-0 mt-4"><a class="button" href="#">SIGN UP NOW</a></h6>
+   </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section id="blog_h" class="p_3">
+    <div class="container-xl">
+	 <div class="row blog_h1">
+	    <div class="col-md-9">
+		  <div class="blog_h1l">
+		     <h6 class="col_blue">LATEST BLOG</h6>
+		 <h1>OUR <span class="col_red">RECENT</span> POSTS</h1>
+		 <p class="mb-0">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum  <br> cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+		  </div>
+		</div>
+		<div class="col-md-3">
+		  <div class="blog_h1r text-end mt-4">
+		    <h6 class="mb-0 "><a class="button" href="#">VIEW ALL BLOG</a></h6>
+		  </div>
+		</div>
+	 </div>
+	 <div class="row blog_h2 mt-4">
+	    <div class="col-md-6 col-sm-6">
+		  <div class="blog_h2l">
+		   <div class="blog_h2li row mx-0">
+		    <div class="col-md-5 p-0">
+			 <div class="blog_h2lil">
+			   <img src="img/5.jpg" class="w-100" alt="abc">
+			 </div>
+			</div>
+			<div class="col-md-7 p-0">
+			 <div class="blog_h2lir shadow_box p-4">
+			  <h6><a class="col_blue" href="#">TOUR</a></h6>
+			  <h5><a href="#">BEST JOURNEY TO PEACEFUL PLACES</a></h5>
+			  <p>Laboris hac erat dolor, posuere volutpat fringilla gravida metus nonummy, blandit mi...</p>
+			  <ul class="font_14">
+		  <li class="d-inline-block"><i class="fa fa-user me-1 col_blue"></i> <a href="#">Ante Quis</a> <span class="text-muted mx-2">|</span></li>
+		  <li class="d-inline-block"><i class="fa fa-comment-o me-1 col_blue"></i> <a href="#">3 </a></li>
+		 </ul>
+		    <h6 class="mb-0"><a class="button p-2 px-4 font_14" href="#">READ MORE</a></h6>
+			 </div>
+			</div>
+		   </div>
+		  </div>
+		</div>
+		<div class="col-md-6 col-sm-6">
+		  <div class="blog_h2l">
+		   <div class="blog_h2li row mx-0">
+		    <div class="col-md-5 p-0">
+			 <div class="blog_h2lil">
+			   <img src="img/6.jpg" class="w-100" alt="abc">
+			 </div>
+			</div>
+			<div class="col-md-7 p-0">
+			 <div class="blog_h2lir shadow_box p-4">
+			  <h6><a class="col_blue" href="#">TRAVEL</a></h6>
+			  <h5><a href="#">BTRAVEL WITH FRIENDS IS BEST</a></h5>
+			  <p>Laboris hac erat dolor, posuere volutpat fringilla gravida metus nonummy, blandit mi...</p>
+			  <ul class="font_14">
+		  <li class="d-inline-block"><i class="fa fa-user me-1 col_blue"></i> <a href="#">Nulla Amet</a> <span class="text-muted mx-2">|</span></li>
+		  <li class="d-inline-block"><i class="fa fa-comment-o me-1 col_blue"></i> <a href="#">4 </a></li>
+		 </ul>
+		    <h6 class="mb-0"><a class="button p-2 px-4 font_14" href="#">READ MORE</a></h6>
+			 </div>
+			</div>
+		   </div>
+		  </div>
+		</div>
+	 </div>
+	</div>
+   </section>
+   
+<section id="testim" class="p_3 bg-light carousel_p">
+    <div class="container-xl">
+	 <div class="row popular_1 text-center mb-4">
+	    <div class="col-md-12">
+		 <h6 class="col_blue">CLIENT'S REVIEWS</h6>
+		 <h1>TRAVELLER'S <span class="col_red">TESTIMONIAL</span></h1>
+		 <p class="mb-0">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum  <br> cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+		</div>
+	 </div>
+	 <div class="testim_1 row">
+	  <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2" class="" aria-current="true"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       <div class="testim_1i row">
+	    <div class="col-md-4">
+		 <div class="testim_1i1 bg-white p-4 clearfix">
+		 <span class="col_blue font_14">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-o"></i>
+		 </span>
+		 <div class="testim_1i1i clearfix mt-3">
+		   <span><img src="img/18.jpg" alt="abc" class="rounded-circle me-3 float-start"></span>
+		   <h6 class="mb-0 fw-bold text-uppercase lh-base"> Eget Nulla <br> <span class="col_blue font_14 text-uppercase fw-normal">Travellers</span></h6>
+		   </div>
+		   <p class="mb-0 mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+		 </div>  
+		</div>
+		<div class="col-md-4">
+		 <div class="testim_1i1 bg-white p-4 clearfix">
+		 <span class="col_blue font_14">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-half-o"></i>
+		 </span>
+		 <div class="testim_1i1i clearfix mt-3">
+		   <span><img src="img/19.jpg" alt="abc" class="rounded-circle me-3 float-start"></span>
+		   <h6 class="mb-0 fw-bold text-uppercase lh-base"> Lorem Porta <br> <span class="col_blue font_14 text-uppercase fw-normal">Travellers</span></h6>
+		   </div>
+		   <p class="mb-0 mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+		 </div>  
+		</div>
+		<div class="col-md-4">
+		 <div class="testim_1i1 bg-white p-4 clearfix">
+		 <span class="col_blue font_14">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		 </span>
+		 <div class="testim_1i1i clearfix mt-3">
+		   <span><img src="img/20.jpg" alt="abc" class="rounded-circle me-3 float-start"></span>
+		   <h6 class="mb-0 fw-bold text-uppercase lh-base"> Dolor Amet <br> <span class="col_blue font_14 text-uppercase fw-normal">Travellers</span></h6>
+		   </div>
+		   <p class="mb-0 mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+		 </div>  
+		</div>
+	   </div>
+    </div>
+    <div class="carousel-item">
+        <div class="testim_1i row">
+	    <div class="col-md-4">
+		 <div class="testim_1i1 bg-white p-4 clearfix">
+		 <span class="col_blue font_14">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-o"></i>
+		 </span>
+		 <div class="testim_1i1i clearfix mt-3">
+		   <span><img src="img/18.jpg" alt="abc" class="rounded-circle me-3 float-start"></span>
+		   <h6 class="mb-0 fw-bold text-uppercase lh-base"> Eget Nulla <br> <span class="col_blue font_14 text-uppercase fw-normal">Travellers</span></h6>
+		   </div>
+		   <p class="mb-0 mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+		 </div>  
+		</div>
+		<div class="col-md-4">
+		 <div class="testim_1i1 bg-white p-4 clearfix">
+		 <span class="col_blue font_14">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-half-o"></i>
+		 </span>
+		 <div class="testim_1i1i clearfix mt-3">
+		   <span><img src="img/19.jpg" alt="abc" class="rounded-circle me-3 float-start"></span>
+		   <h6 class="mb-0 fw-bold text-uppercase lh-base"> Lorem Porta <br> <span class="col_blue font_14 text-uppercase fw-normal">Travellers</span></h6>
+		   </div>
+		   <p class="mb-0 mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+		 </div>  
+		</div>
+		<div class="col-md-4">
+		 <div class="testim_1i1 bg-white p-4 clearfix">
+		 <span class="col_blue font_14">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		 </span>
+		 <div class="testim_1i1i clearfix mt-3">
+		   <span><img src="img/20.jpg" alt="abc" class="rounded-circle me-3 float-start"></span>
+		   <h6 class="mb-0 fw-bold text-uppercase lh-base"> Dolor Amet <br> <span class="col_blue font_14 text-uppercase fw-normal">Travellers</span></h6>
+		   </div>
+		   <p class="mb-0 mt-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+		 </div>  
+		</div>
+	   </div>
+    </div>
+  </div>
+</div>
+	</div>
+	</div>
+   </section>
+   
+<section id="sub" class="pt-5 pb-5 bg_red">
+    <div class="container-xl">
+	 <div class="row sub_1">
+	    <div class="col-md-9">
+		  <div class="sub_1l">
+		     <h6 class="text-white">CALL TO ACTION</h6>
+		 <h1 class="text-white">READY FOR <span class="col_blue">UNFORGATABLE</span> <br> TRAVEL REMEMBER US!</h1>
+		 <p class="mb-0 text-white">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum  <br> cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+		  </div>
+		</div>
+		<div class="col-md-3">
+		  <div class="sub_1r text-end mt-5">
+		    <h6 class="mb-0"><a class="button_1" href="#">CONTACT US !</a></h6>
+		  </div>
+		</div>
+	 </div>
+	 
+	</div>
+   </section>
+{% endblock %}
